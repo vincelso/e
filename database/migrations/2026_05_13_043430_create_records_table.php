@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('course');
             $table->decimal('grade', 5, 2)->nullable();
-            $table->strubg('status')->default('active');
+            $table->string('status')->default('active');
             $table->timestamps();
         });
     }
